@@ -1,0 +1,36 @@
+.logo-container{
+    z-index: 0;
+    width: 400px;
+    height: 609px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    animation: bounce 5s;
+
+    svg{
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        transform: rotateZ(30deg) !important;
+    }
+
+    .solid-logo{
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+        margin-left: -100px;
+        opacity: 100;
+        transform: rotateZ(30deg);
+        z-index: 1;
+        border: darkred 3px solid;
+    }
+}
+
