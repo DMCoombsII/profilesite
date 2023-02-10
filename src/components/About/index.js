@@ -2,7 +2,10 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngular, faCss3, faHtml5, faJava, faJsSquare, faNode, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faCss3, faHtml5, faJsSquare, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import Me from '../Selfie'
+import Loader from 'react-loaders'
+
 
 const About = () => {
     const[letterClass, setLetterClass] = useState('text-animate')
@@ -14,6 +17,7 @@ const About = () => {
     }, [])
 
     return (
+        <>
         <div className='container about-page'>
             <div className='text-zone'>
                 <h1>
@@ -24,14 +28,23 @@ const About = () => {
                     />
                 </h1>
                 <p>
-                    1st paragraph is who i am and what i want
+                    My name is David Coombs and I am a fullstack developer. 
+                    I am looking for work as a react developer at this moment but 
+                    there are pleanty of other skills to obtain.
                 </p>
                 <p>
-                    2nd paragraph are good and hireable qualities 
+                    I have only had 1 job my whole life at it has been at Tavern in 
+                    the Square, a restaurant chain here in the north east USA. Serving tables
+                    here as taught me a lot about hard work and getting the most from your time.
+                    I don't miss a shift and give 100% everyday. The hours are long so I am used to 
+                    putting in long days at the office. As long as my work is rewarding I will give my all.
                 </p>
                 <p>
-                    3rd paragraph is where i want my career to go!
+                    My dream job is to be a developer for the MLB. I love baseball and that would be an amzing
+                    positon to hold. But on a professional level I am looking for fullstack work and would be 
+                    a great add to any team! I am always ready to learn and contribute.
                 </p>
+                <Me />
             </div>
 
             <div className='stage-cube-cont'>
@@ -57,6 +70,8 @@ const About = () => {
                 </div>
             </div>
         </div>
+        <Loader type='ball-zig-zag' />
+        </>
     )
 }
 

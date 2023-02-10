@@ -33,7 +33,7 @@ const Sidebar = () => (
                 </a>
             </li>
             <li>
-                <a target='_blank' rel='noreferrer' href='###'>
+                <a target='_blank' rel='noreferrer' href='https://twitter.com/davidwillcode?s=11&t=yWZqaRrQ2kMafYIFmeqHDg'>
                     <FontAwesomeIcon icon={faTwitter} color='#00000' />
                 </a>
             </li>

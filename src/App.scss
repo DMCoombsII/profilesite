@@ -1,6 +1,7 @@
 $primary-color: #daa520;
 
 @import 'animate.css';
+@import '~loaders.css/src/animations/ball-zig-zag.scss';
 
 @font-face {
   font-family: 'Hellvetica Neue';
@@ -20,4 +21,18 @@ $primary-color: #daa520;
 input,
 textarea{
   font-family: 'Times New Roman';
+}
+
+.loader-active{
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 }
